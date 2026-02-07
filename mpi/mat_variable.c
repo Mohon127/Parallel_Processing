@@ -160,3 +160,9 @@ int main(int argc, char **argv) {
     MPI_Finalize();
     return 0;
 }
+
+
+/*
+mpicc mat_variable.c -o mat_var
+mpirun -np 4 ./mat_var 244 100 100 100
+*/
