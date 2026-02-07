@@ -85,7 +85,7 @@ int main(int argc, char* argv[]) {
     // Copy result back
     cudaMemcpy(h_R, d_R, sizeR * sizeof(float), cudaMemcpyDeviceToHost);
 
-    // Output
+    // Output the 9th(Optional) matrix:
     if (K > 9) {
         cout << "Matrix A[9]:" << endl;
         printMatrixAtIndex(h_A, 9, M, N);
@@ -107,4 +107,4 @@ int main(int argc, char* argv[]) {
 
 
 //!nvcc -arch=sm_75 matrix.cu -o matrix
-//!time ./matrix 400 2 2 2 2 > output.txt
+//!time ./matrix 400 100 2 2 2 > output.txt
