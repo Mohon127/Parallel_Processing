@@ -152,3 +152,8 @@ int main(int argc, char **argv) {
 
 // mpicc helllo.c -o hello
 // mpirun -np 4 ./hello 
+
+/*
+MPI Library (e.g., OpenMPI) installation:
+Ubuntu: sudo apt install openmpi-bin openmpi-common libopenmpi-dev
+*/
